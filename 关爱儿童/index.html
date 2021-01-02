@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>关爱明天</title>
+		<link rel="stylesheet" type="text/css" href="./css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="./css/index.css"/>
+		<link rel="stylesheet" type="text/css" href="./Swiper-3.4.2/dist/css/swiper.min.css"/>
+		<style type="text/css">
+			.swiper-container {
+			    width: 100%;
+				margin-top: 3.125rem;
+			    padding-top: 3.125rem;
+			    padding-bottom: 3.125rem;
+			}
+			.swiper-slide {
+			    background-position: center;
+			    background-size: cover;
+			    width: 18.75rem;
+			    height: 18.75rem;
+			}
+		</style>
+	</head>
+	<body>
+		<header>
+			<h3>让儿童健康成长！</h3>
+			<div class="m-logo">
+				<img src="./img/logo.png" alt="" />
+			</div>
+		</header>
+		<div class="g-container">
+			<nav>
+				<ul>
+					<li>
+						<a href="index.html">首页</a>
+					</li>
+					<li>
+						<a href="HopeProject.html">希望工程</a>
+					</li>
+					<li>
+						<a href="news.html">新闻</a>
+					</li>
+					
+					<li>
+						<a href="developmentPlanning.html">发展规划</a>
+					</li>
+				</ul>
+			</nav>
+			<!-- Swiper -->
+			<div class="swiper-container">
+			    <div class="swiper-wrapper">
+			        <div class="swiper-slide" style="background-image:url(./img/1.jpg);"></div>
+			        <div class="swiper-slide" style="background-image:url(./img/2.jpg);"></div>
+			        <div class="swiper-slide" style="background-image:url(./img/3.jpeg);"></div>
+			        <div class="swiper-slide" style="background-image:url(./img/4.jpeg);"></div>
+			        <div class="swiper-slide" style="background-image:url(./img/5.jpg);"></div>
+			        <div class="swiper-slide" style="background-image:url(./img/6.jpg);"></div>
+			        <div class="swiper-slide" style="background-image:url(./img/7.jpg);"></div>
+			        <div class="swiper-slide" style="background-image:url(./img/8.jpeg);"></div>
+			    </div>
+			    <!-- Add Pagination -->
+			    <div class="swiper-pagination"></div>
+			</div>
+		</div>
+		<div class="g-left">
+			<img src="./img/fuOne.png" alt="" />
+		</div>
+		<div class="g-right">
+			<img src="img/fuTwo.png" alt="" />
+		</div>
+		<footer>
+			<p>created by XXXX</p>
+			<p>联系邮箱:XXXX@XXX.com</p>
+		</footer>
+	</body>
+	<script src="./Swiper-3.4.2/dist/js/swiper.min.js"></script>
+	<script type="text/javascript">
+		var swiper = new Swiper('.swiper-container', {
+			autoplay:2000,
+			loop:true,
+		    pagination: '.swiper-pagination',
+		    effect: 'coverflow',
+		    grabCursor: true,
+		    centeredSlides: true,
+		    slidesPerView: 'auto',
+		    coverflow: {
+		        rotate: 50,
+		        stretch: 0,
+		        depth: 100,
+		        modifier: 1,
+		        slideShadows : true
+		    }
+		});
+	</script>
+</html>

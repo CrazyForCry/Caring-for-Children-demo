@@ -1,0 +1,122 @@
+body {
+				background-color: #cccccc
+			}
+			
+			.g-container {
+				width: 62.5rem;
+				height: 62.5rem;
+				border: 1px solid pink;
+				margin: 0 auto;
+				background-color: white;
+			}
+			.g-container .head {
+				margin-top: 0.625rem;
+				font-size: 24px;
+				padding-left: 1.875rem;
+				position: relative;
+			}
+			
+			.g-container .head::before {
+				content: "";
+				width: 0.625rem;
+				height: 20px;
+				position: absolute;
+				left: 0;
+				background-color: #007AFF
+			}
+			
+			.g-container .head::after {
+				content: "";
+				width: 80%;
+				height: 0.3125rem;
+				position: absolute;
+				left: 15%;
+				top: 0.625rem;
+				background-color: gray;
+			}
+			.g-container ul li{
+				margin-left: 0.625rem;
+				margin-top: 1.25rem;
+			}
+			.g-container ul li h3{
+				font-size: 20px;
+			}
+			.g-container ul li p{
+				margin-left: 1.25rem;
+				text-indent: 2em;
+				margin-top: 0.625rem;
+				font-size: 16px;
+				width: 85%;
+			}
+			.g-container ul li:first-of-type{
+				position: relative;
+			}
+			.g-container ul li:first-of-type p{
+				width: 60%;
+			}
+			.g-container ul li:first-of-type img{
+				position: absolute;
+				right: 5%;
+				top: 0;
+			}
+			#canvas{
+				position: fixed;
+				top: 0;
+				left: 0%;
+			}
+			
+			.g-back {
+				width: 6.25rem;
+				height: 6.25rem;
+				border-radius: 50%;
+				background-color: white;
+				opacity: 0.4;
+				text-align: center;
+				line-height: 6.25rem;
+				position: fixed;
+				top: 50%;
+				right: 15%;
+			}
+			
+			.g-back a {
+				font-size: 20px;
+				color: crimson;
+				font-weight: bold;
+			}
+			.g-left,
+			.g-right {
+				position: fixed;
+				bottom: 40%;
+				width: 15rem;
+				/* box-shadow: 10px 10px 10px aquamarine; */
+			}
+			
+			.g-left {
+				
+				left: 1%;
+			}
+			
+			.g-right {
+				bottom: 10%;
+				right: 1%;
+			}
+			
+			.g-left img,
+			.g-right img {
+				width: 100%;
+				border-radius: 10px;
+			}
+/* footer */
+footer {
+	width: 100%;
+	background-color: #333333;
+	height: 3.125rem;
+	color: white;
+	text-align: center;
+}
+
+footer p {
+	font-weight: bold;
+	height: 1.25rem;
+	line-height: 1.25rem;
+}

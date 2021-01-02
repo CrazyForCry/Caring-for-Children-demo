@@ -1,0 +1,240 @@
+body {
+	background-color: #cccccc
+}
+
+.g-container {
+	width: 62.5rem;
+	height: 137.5rem;
+	border: 1px solid pink;
+	margin: 0 auto;
+	background-color: white;
+}
+
+.g-container .head {
+	margin-top: 0.625rem;
+	font-size: 24px;
+	padding-left: 1.875rem;
+	position: relative;
+}
+
+.g-container .head::before {
+	content: "";
+	width: 0.625rem;
+	height: 20px;
+	position: absolute;
+	left: 0;
+	background-color: #007AFF
+}
+
+.g-container .head::after {
+	content: "";
+	width: 80%;
+	height: 0.3125rem;
+	position: absolute;
+	left: 15%;
+	top: 0.625rem;
+	background-color: gray;
+}
+
+.g-container h3 {
+	margin-top: 0.625rem;
+	font-size: 20px;
+	margin-left: 2.5rem;
+}
+
+.g-container p {
+	margin-top: 0.625rem;
+	margin-left: 2.5rem;
+	text-indent: 2em;
+	font-size: 16px;
+	width: 90%;
+}
+
+.g-container .middle {
+	font-size: 20px;
+	margin-left: 2.5rem;
+}
+
+.g-container .bottom {
+	font-size: 14px;
+	margin-left: 3.125rem;
+}
+
+.g-one,
+.g-two,
+.g-three,
+.g-four,
+.g-five {
+	width: 18.75rem;
+	position: absolute;
+	/* animation: move 10s linear; */
+}
+
+.g-one {
+	animation: moveOne 20s linear infinite;
+}
+
+.g-two {
+	left: 5%;
+	top: 5%;
+	animation: moveTwo 22s linear infinite;
+}
+
+.g-three {
+	left: 0;
+	bottom: 0;
+	animation: moveThree 25s linear infinite;
+}
+
+.g-four {
+	right: 0;
+	bottom: 10%;
+	animation: moveFour 30s linear infinite;
+}
+
+.g-five {
+	right: 5%;
+	bottom: 40%;
+	animation: moveFive 15s linear infinite;
+}
+
+.g-one img,
+.g-two img,
+.g-three img,
+.g-four img,
+.g-five img {
+	width: 100%;
+}
+
+@keyframes moveOne {
+	0% {
+		left: 0;
+		top: 0;
+	}
+
+	25% {
+		left: 30%;
+		top: 30%;
+	}
+
+	50% {
+		left: 80%;
+		top: 70%;
+	}
+
+	75% {
+		left: 30%;
+		top: 80%;
+	}
+
+	100% {
+		left: 0;
+		top: 120%;
+	}
+}
+
+@keyframes moveTwo {
+	0% {
+		top: 5%;
+	}
+
+	25% {
+		top: 70%;
+	}
+
+	50% {
+		top: 150%;
+	}
+
+	75% {
+		top: 70%;
+	}
+
+	100% {
+		top: 5%;
+	}
+}
+
+@keyframes moveThree {
+	0% {
+		left: 0;
+		bottom: 0;
+	}
+
+	50% {
+		left: 80%;
+		bottom: 80%;
+	}
+
+	100% {
+		left: 0;
+		bottom: 0;
+	}
+}
+
+@keyframes moveFour {
+	0% {
+		right: 0;
+		bottom: 10%;
+	}
+
+	50% {
+		right: 80%;
+		bottom: -50%;
+	}
+
+	100% {
+		right: 0;
+		bottom: 10%;
+	}
+}
+
+@keyframes moveFive {
+	0% {
+		right: 5%;
+
+	}
+
+	50% {
+		right: 80%;
+
+	}
+
+	100% {
+		right: 5%;
+	}
+}
+
+.g-back {
+	width: 6.25rem;
+	height: 6.25rem;
+	border-radius: 50%;
+	background-color: white;
+	opacity: 0.4;
+	text-align: center;
+	line-height: 6.25rem;
+	position: fixed;
+	top: 50%;
+	right: 15%;
+}
+
+.g-back a {
+	font-size: 20px;
+	color: crimson;
+	font-weight: bold;
+}
+
+/* footer */
+footer {
+	width: 100%;
+	background-color: #333333;
+	height: 3.125rem;
+	color: white;
+	text-align: center;
+}
+
+footer p {
+	font-weight: bold;
+	height: 1.25rem;
+	line-height: 1.25rem;
+}
